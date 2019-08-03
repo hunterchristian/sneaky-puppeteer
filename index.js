@@ -9,7 +9,7 @@ puppeteer.use(pluginStealth())
 let browser;
 const goTo = async (url) => {
   browser = await puppeteer.launch({ headless: false, ignoreDefaultArgs: ['--enable-automation'] });
-  const page = await browser.newPage();
+  const page = await browser.newPage({ waitUntil: 'networkidle0' });
   await page.goto(url)
   
   return page;
