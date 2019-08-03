@@ -1,6 +1,6 @@
 {
   "name": "sneaky-puppeteer",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Use puppeteer to imitate a non-automated browser session while retaining all of the capabilities that come with automation",
   "main": "index.js",
   "scripts": {
